@@ -1,11 +1,15 @@
-<div class="jumbotron">
-<h1><center>Welcome</center></h1>
-
 <% if user_signed_in? %>
 <center>Now, let us find something for you!</center>
 <% else %>
+
+
 <p><center>
-	<%= link_to "Login", new_user_session_path, class: "btn btn-default" %> <%= link_to "Signup", new_user_registration_path, class: "btn btn-primary" %>
+<div class="jumbotron">
+<h3><center>Dempsit! finds where you want to be for you!</center></h1>
+
+<center>Let us do the work so you don't have to.</center>
+</br>
+	<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %> <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
 </center></p>
-<% end %>
 </div>
+<% end %>

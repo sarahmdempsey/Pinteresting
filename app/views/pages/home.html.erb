@@ -1,15 +1,28 @@
+
+
 <% if user_signed_in? %>
-<center>Now, let us find something for you!</center>
+
+		<p><center>
+			<div class="jumbotron">
+				<h2><center>Welcome</center></h2>
+
+				<h4><center>Now, let's get started!</center></h4>
+			</div>
+
 <% else %>
 
 
-<p><center>
-<div class="jumbotron">
-<h3><center>Dempsit! finds where you want to be for you!</center></h1>
+		<p><center>
+			<div class="jumbotron">
+				<h5><center>Channy is an application for parents who are on the go and want to organize chores, reward their kids, and teach them how to budget their money.</center></h5>
 
-<center>Let us do the work so you don't have to.</center>
-</br>
-	<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %> <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
-</center></p>
-</div>
+				<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %> <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
+				</center></p>
+			</div>
+
+	  
+
+
+	<
+
 <% end %>

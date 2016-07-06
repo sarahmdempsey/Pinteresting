@@ -4,10 +4,15 @@
 
 		<p><center>
 			<div class="jumbotron">
-				<h2><center>Welcome</center></h2>
-
-				<h4><center>Now, let's get started!</center></h4>
+				<h2><center>Welcome!</center></h2>
 			</div>
+
+			<%= link_to "Ideas", ideas_path, class: "btn btn-default" %> 
+			<%= link_to "Build It", buildit_path, class: "btn btn-default" %>
+			<%= link_to "My Itineraries", myitineraries_path, class: "btn btn-default" %> 
+			<%= link_to "My Scrapbook", myscrapbook_path, class: "btn btn-default" %>
+
+
 
 <% else %>
 

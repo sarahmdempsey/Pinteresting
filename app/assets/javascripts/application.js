@@ -15,3 +15,10 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+jQuery(function($){
+	$(".rating").on("click", function(){
+		$(".rating").removeClass("selected");
+		$(this).addClass("selected");
+	})
+})

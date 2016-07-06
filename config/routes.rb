@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
   resources :tasks
+
   devise_for :users
   root "pages#home"
   get "about" => "pages#about"
+  get "profile" => "pages#profile"
+  get "profile2" => "pages#profile2"
+  get "profile3" => "pages#profile3"
+  get "buildit" => "pages#buildit"
+  get "ideas" => "pages#ideas"
+  get "myitineraries" => "pages#myitineraries"
+  get "myscrapbook" => "pages#myscrapbook"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

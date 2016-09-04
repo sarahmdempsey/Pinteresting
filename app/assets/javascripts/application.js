@@ -13,12 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require turbolinks
+//= require masonry/jquery.masonry
+//= require masonry/jquery.imagesloaded.min
 //= require_tree .
 
 jQuery(function($){
 	$(".rating").on("click", function(){
-		$(".rating").removeClass("selected");
+		$(this).parent().find($(".rating")).removeClass("selected");
 		$(this).addClass("selected");
 	})
 })

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :tasks
 
   devise_for :users
-  root "pages#home"
+  root "pins#index"
   get "about" => "pages#about"
   get "profile" => "pages#profile"
   get "profile2" => "pages#profile2"
